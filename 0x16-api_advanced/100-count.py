@@ -25,7 +25,7 @@ def count_words(subreddit, word_list, after='start', words_count=None):
         words_count = {word: 0 for word in word_list}
 
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    headers = {"user-agent": "Fake-Agent"}
+    headers = {"user-agent": "u/Haisenberg"}
     if after != 'start':
         url += "?after={}".format(after)
 
