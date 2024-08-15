@@ -5,10 +5,10 @@ import requests
 
 def top_ten(subreddit):
     """
-This function retrieves the top ten posts from a given subreddit on Reddit.
-Args:
+    This function retrieves the top ten posts from a given subreddit on Reddit.
+    Args:
     subreddit (str): The name of the subreddit to retrieve posts from.
-Returns:
+    Returns:
     None
     Raises:
     requests.exceptions.HTTPError: If there is an HTTP error during the request.
