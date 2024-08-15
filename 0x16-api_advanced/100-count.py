@@ -5,14 +5,14 @@ import requests
 
 def count_words(subreddit, word_list, after='start', words_count=None):
     """
-    Count the occurrences of words from a given word 
+    Count the occurrences of words from a given word
     list in the titles of posts from a subreddit.
     Args:
         subreddit (str): The name of the subreddit.
         word_list (list): A list of words to count.
-        after (str, optional): The identifier of the 
+        after (str, optional): The identifier of the
         post to start counting from. Defaults to 'start'.
-        words_count (dict, optional): A dictionary to 
+        words_count (dict, optional): A dictionary to
         store the word counts. Defaults to None.
     Returns:
         int: 1 if the counting is successful, 0 otherwise.
