@@ -16,7 +16,7 @@ Returns:
     ValueError: If there is a value error while processing the JSON response.
     """
     url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=10"
-    headers = {'User-Agent': 'Custom User Agent'}
+    headers = {'User-Agent': 'Haisenberg00'}
 
     try:
         response = requests.get(url, headers=headers, allow_redirects=False)
