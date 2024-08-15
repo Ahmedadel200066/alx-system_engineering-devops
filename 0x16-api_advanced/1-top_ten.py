@@ -5,15 +5,19 @@ import requests
 
 def top_ten(subreddit):
     """
-    This function retrieves the top ten posts from a given subreddit on Reddit.
+    This function retrieves the top ten posts from
+    a given subreddit on Reddit.
     Args:
     subreddit (str): The name of the subreddit to retrieve posts from.
     Returns:
     None
     Raises:
-    requests.exceptions.HTTPError: If there is an HTTP error during the request.
-    KeyError: If there is a key error while accessing the JSON response.
-    ValueError: If there is a value error while processing the JSON response.
+    requests.exceptions.HTTPError: 
+    If there is an HTTP error during the request.
+    KeyError: If there is a key error 
+    while accessing the JSON response.
+    ValueError: If there is a value error 
+    while processing the JSON response.
     """
     url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=10"
     headers = {'User-Agent': 'Haisenberg00'}
